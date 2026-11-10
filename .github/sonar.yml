@@ -1,5 +1,5 @@
 name: SonarQube Local Auto Scan
-#www
+
 on:
   push:
     branches:
