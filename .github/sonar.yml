@@ -1,4 +1,4 @@
-name: SonarQube Local Auto Scan
+name: Local Sonar Analysis
 
 on:
   push:
