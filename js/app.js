@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search');
     const clientsList = document.getElementById('clients-list');
-
+    const a=
     function renderClients(clients) {
         if (!clientsList) {
             return;
