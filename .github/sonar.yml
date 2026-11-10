@@ -1,0 +1,21 @@
+name: SonarQube Local Auto Scan
+
+on:
+  push:
+    branches:
+      - main  # بدلها باسم الbranch ديالك إيلا كان شي اسم آخر بحال master
+
+jobs:
+  build:
+    name: Build and Analyze
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  
+
+      - name: SonarQube Scan
+        uses: sonarsource/sonarqube-scan-action@master
+        env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN1 }}
+          SONAR_HOST_URL: https://canary-path-flyer.ngrok-free.dev
