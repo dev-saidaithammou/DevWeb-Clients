@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main  
-
+##said
 jobs:
   build:
     name: Build and Analyze
@@ -18,4 +18,4 @@ jobs:
         uses: sonarsource/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN1 }}
-          SONAR_HOST_URL: https://canary-path-flyer.ngrok-free.dev
+          SONAR_HOST_URL: https://canary-path-flyer.ngrok-free.dev 
