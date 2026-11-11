@@ -18,7 +18,7 @@ jobs:
         uses: sonarsource/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN1 }}
-          SONAR_HOST_URL: https://canary-path-flyer.ngrok-free.dev
+          SONAR_HOST_URL: https://tricky-dingos-wink.loca.lt
         with:
           args: >
             -Dsonar.ws.truststore=true
