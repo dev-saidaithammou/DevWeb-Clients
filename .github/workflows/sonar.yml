@@ -19,3 +19,7 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN1 }}
           SONAR_HOST_URL: https://canary-path-flyer.ngrok-free.dev
+        with:
+          args: >
+            -Dsonar.ws.truststore=true
+            -Dsonar.verbose=true
